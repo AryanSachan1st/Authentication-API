@@ -27,8 +27,8 @@ app.use("/users", userRouter)
 // global error handler
 app.use((err, req, res, next) => {
     console.error(err); // Log error to console for debugging
-    let errorCode = err.statusCode || 500
-    let errorMessage = err.message || err.errorMessage || "Internal Server Error"
+    let errorCode = err.code || 500
+    let errorMessage = err.message || "Internal Server Error"
 
     if (err.name === "CastError") {
         errorCode = 400,
