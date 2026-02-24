@@ -28,7 +28,7 @@ A RESTful Authentication API built with **Node.js**, **Express.js**, and **Mongo
 
    ```env
    PORT=3003
-   MONGODB_URI=mongodb://localhost:27017/authentication-api
+   MONGODB_URI=your_mongodb_uri
    ACCESSTOKEN_SECRET=your_access_token_secret
    ACCESSTOKEN_EXPIRY=1d
    REFRESHTOKEN_SECRET=your_refresh_token_secret
