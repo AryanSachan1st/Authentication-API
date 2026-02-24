@@ -5,12 +5,12 @@ import bcrypt from "bcrypt"
 const UserSchema = new mongoose.Schema(
     {
         fullname: {
-            type: "String",
+            type: String,
             required: true,
             index: true
         },
         username: {
-            type: "String",
+            type: String,
             required: true,
             unique: true,
             index: true
@@ -19,16 +19,16 @@ const UserSchema = new mongoose.Schema(
             type: String // cloudinary public url
         },
         email: {
-            type: "String",
+            type: String,
             required: true,
             unique: true
         },
         password: {
-            type: "String",
+            type: String,
             required: true
         },
         refreshToken: {
-            type: "String"
+            type: String
         }
     },
     { timestamps: true }
